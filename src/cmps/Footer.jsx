@@ -7,21 +7,21 @@ export function Footer() {
     <footer className='footer'>
       <div className='social-links'>
         <a
-          href='https://www.instagram.com/syrup_band/'
+          href='https://www.instagram.com/crowndeformitydc/'
           target='_blank'
           rel='noopener noreferrer'
         >
           <img src={Instagram} alt='Instagram' />
         </a>
         <a
-          href='https://www.instagram.com/syrup_band/'
+          href='https://www.facebook.com/crowndeformitydc/'
           target='_blank'
           rel='noopener noreferrer'
         >
           <img src={Facebook} alt='Facebook' />
         </a>
         <a
-          href='https://www.instagram.com/syrup_band/'
+          href='https://www.instagram.com/crowndeformitydc/'
           target='_blank'
           rel='noopener noreferrer'
         >
