@@ -1,5 +1,5 @@
-// import Logo from '../assets/Branding/logo1.svg'
-import Logo from '/src/assets/Branding/logo1.svg'
+import Logo from '../assets/Branding/logo1.svg'
+// import Logo from '/src/assets/Branding/logo1.svg'
 
 export function AppHeader() {
   return (

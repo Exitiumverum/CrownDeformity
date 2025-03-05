@@ -1,9 +1,9 @@
-import CoverArt from '/src/assets/Branding/Blackened skies cover.png'
-import Spotify from '/src/assets/Branding/spotify-icon.svg'
-import AppleMusic from '/src/assets/Branding/apple-music-icon.svg'
-import YouTube from '/src/assets/Branding/youtube-music-icon.svg'
-import Img from '/src/assets/Branding/IMG_2184.jpg'
-import Ticket from '/src/assets/Branding/Tickets.svg'
+import CoverArt from '../assets/Branding/Blackened skies cover.png'
+import Spotify from '../assets/Branding/spotify-icon.svg'
+import AppleMusic from '../assets/Branding/apple-music-icon.svg'
+import YouTube from '../assets/Branding/youtube-music-icon.svg'
+import Img from '../assets/Branding/IMG_2184.jpg'
+import Ticket from '../assets/Branding/Tickets.svg'
 
 export function Home() {
   return (

@@ -1,6 +1,6 @@
-import Instagram from '/src/assets/Social media/instagram.svg'
-import Facebook from '/src/assets/Social media/facebook.svg'
-import Youtube from '/src/assets/Social media/youtube.svg'
+import Instagram from '../assets/Social media/instagram.svg'
+import Facebook from '../assets/Social media/facebook.svg'
+import Youtube from '../assets/Social media/youtube.svg'
 
 export function Footer() {
   return (
