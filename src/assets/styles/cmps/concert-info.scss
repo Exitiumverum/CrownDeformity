@@ -1,0 +1,26 @@
+.ticket-btn {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 0.5em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  //   width: 16em;
+  font-size: 1.7em;
+  color: white;
+  background-color: rgb(35, 34, 34);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition: scale 0.3s ease;
+}
+
+.ticket-btn:hover {
+  background-color: rgb(51, 50, 50);
+  scale: 1.05;
+}
+
+.ticket-img {
+  width: 2em;
+  height: 2em;
+}

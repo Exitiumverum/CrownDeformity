@@ -1,0 +1,88 @@
+.station-details-header {
+  display: flex;
+  flex-direction: row;
+  line-height: 1;
+  border-radius: 0.5em;
+  background-color: $station-header-background-color;
+  container-type: inline-size;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 5.7em;
+}
+
+h2.artist-title {
+  display: flex;
+  gap: 0.5em;
+}
+
+.station-creator-name {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.station-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.3em 1.5em 2.5em 1.5em;
+  border-radius: em(4px);
+  position: relative;
+
+  width: 100%;
+  max-width: em(232px);
+  max-height: em(232px);
+  min-width: rem(128px);
+  aspect-ratio: 1 / 1;
+  height: auto;
+
+  background-color: $station-img-default-background-color;
+  fill: $station-img-default-fill-color;
+
+  // img.station-img {
+  //   padding: em(80px);
+  // }
+
+  svg {
+    height: 4em;
+    width: 4em;
+  }
+
+  .svg-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.7);
+    inset: 0;
+  }
+}
+
+.station-type {
+  font-size: em(14px);
+}
+
+.station-name {
+  font-size: em(96px);
+  font-family: Spotifymix-Bold;
+  cursor: pointer;
+  font-size: clamp(44px, 10cqw, 96px);
+}
+
+.station-total-length {
+  display: inline;
+  align-self: center;
+  font-size: 14px;
+  color: $station-table-header-font-color;
+}
+
+.verified-icon-img {
+  height: 24px;
+  width: 14px;
+}

@@ -1,0 +1,47 @@
+.side-bar-station-preview {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em;
+  border-radius: 0.6em;
+
+  img {
+    width: 3em;
+    height: 3em;
+  }
+
+  h3 {
+    font-size: 0.9em;
+    color: white;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  &:hover {
+    background-color: #1f1f1f;
+    cursor: pointer;
+  }
+}
+.side-bar-station-preview.playlist {
+  img {
+    border-radius: 0.6em;
+    background-color: #282828;
+  }
+  img[src$='.svg'] {
+    padding: 0.8em;
+  }
+}
+
+.side-bar-station-preview.artist {
+  img {
+    border-radius: 50%;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}

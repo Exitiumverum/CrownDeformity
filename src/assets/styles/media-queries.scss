@@ -1,0 +1,22 @@
+@media (hover: none) {
+  button:hover {
+    scale: 1;
+    background-color: inherit;
+  }
+
+  .cover-art {
+    width: 17em;
+    height: 17em;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn:hover {
+    scale: 1;
+  }
+
+  .ticket-btn:hover {
+    scale: 1;
+    background-color: rgb(35, 34, 34);
+  }
+}

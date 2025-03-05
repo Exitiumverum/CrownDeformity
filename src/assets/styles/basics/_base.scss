@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  ::-webkit-scrollbar {
+    color: #5a5a5a;
+    width: 0.5em;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #5a5a5a;
+    border-radius: 1em;
+  }
+}
+
+html {
+  line-height: 1.6;
+}
+
+body {
+  font-family: Spotifymix-Regular, Roboto, Ubuntu, 'Helvetica Neue', Helvetica,
+    sans-serif;
+
+  background-color: $clr-neutral-black;
+  color: $clr-neutral-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+input {
+  max-width: 100%;
+}
+
+mark {
+  color: $clr1;
+  background-color: transparent;
+}
+
+.debug * {
+  outline: 1px solid gold;
+}
+
+.done {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+// Shapes
+.circle {
+  border-radius: 50%;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.btn {
+  @include btn; // Default button (primary blue)
+
+  &-neutral-dark {
+    @include btn($bg: $clr-neutral-black, $clr: $clr-neutral-white);
+  }
+
+  &-neutral-light {
+    @include btn($bg: $clr-neutral-white, $clr: $clr-neutral-black);
+  }
+
+  &-clr-red {
+    @include btn($bg: $clr-primary-red, $clr: $clr-neutral-white);
+  }
+
+  &-clr-blue {
+    @include btn($bg: $clr-primary-blue, $clr: $clr-neutral-white);
+  }
+
+  &-clr-green {
+    @include btn($bg: $clr-secondary-green, $clr: $clr-neutral-white);
+  }
+
+  &-clr-yellow {
+    @include btn($bg: $clr-secondary-yellow, $clr: $clr-neutral-black);
+  }
+
+  &-clr-pink {
+    @include btn($bg: $clr-secondary-pink, $clr: $clr-neutral-white);
+  }
+
+  &-cta {
+    @include btn($bg: $clr-primary-red, $clr: $clr-neutral-white);
+  }
+}
+
+.btn-round {
+  border-radius: 1em;
+}
+.btn-round-1 {
+  border-radius: 1.5em;
+}
+.btn-round-2 {
+  border-radius: 2em;
+}
+
+.btn-pill {
+  border-radius: 100vh;
+}
