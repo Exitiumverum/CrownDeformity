@@ -1,4 +1,4 @@
-import CoverArt from '../assets/Branding/Blackened skies cover.png'
+import CoverArt from '../assets/Branding/BlackenedSkiesCover.png'
 import Spotify from '../assets/Branding/spotify-icon.svg'
 import AppleMusic from '../assets/Branding/apple-music-icon.svg'
 import YouTube from '../assets/Branding/youtube-music-icon.svg'
