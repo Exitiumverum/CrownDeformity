@@ -11,47 +11,18 @@
 @import 'basics/forms';
 
 // pages
-@import 'pages/AboutUs';
 @import 'pages/HomePage';
-@import 'pages/UserDetails';
-@import 'pages/TaskDetails';
-
-@import 'pages/LoginSignup';
-@import 'pages/Login';
-
-@import 'pages/StationIndex';
-@import 'pages/StationDetail';
-@import 'pages/StationExplore';
 
 // Components
+// Components
 @import 'cmps/list';
+@import 'cmps/AppHeader';
 @import 'cmps/Footer.scss';
 @import 'cmps/concert-info';
 @import 'cmps/Divider';
-@import 'cmps/StationPreview';
-@import 'cmps/StationExploreArticle';
-@import 'cmps/StationExploreGrid';
-@import 'cmps/StationList';
-@import 'cmps/PlayBtn';
-@import 'cmps/Sidebar';
-@import 'cmps/AppHeader';
 @import 'cmps/CoverArt';
-@import 'cmps/AppFooter';
-@import 'cmps/UserMsg';
-@import 'cmps/ScrollBtn';
-
-@import 'cmps/SideBar';
-@import 'cmps/SideBarStationPreview';
 
 @import 'cmps/nav-links';
 @import 'cmps/icon-style';
 
-@import 'cmps/StationDetailHeader';
-@import 'cmps/StationDetailActionBtns';
-@import 'cmps/StationDetailList';
-@import 'cmps/StationDetailPreview';
-@import 'cmps/StationDetailSearch';
-@import 'cmps/EditStationModal';
-@import 'cmps/LoginForm';
-
-@import 'media-queries.scss';
+@import 'media-queries';
