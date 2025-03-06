@@ -5,7 +5,7 @@ import YouTube from '../assets/Branding/youtube-music-icon.svg'
 import Img from '../assets/Branding/IMG_2184.jpg'
 import Ticket from '../assets/Branding/tickets.svg'
 
-export default function Home() {
+export function Home() {
   return (
     <div className='home-page'>
       <h1>Blackened Skies</h1>
