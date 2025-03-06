@@ -3,7 +3,7 @@ import Spotify from '../assets/Branding/spotify-icon.svg'
 import AppleMusic from '../assets/Branding/apple-music-icon.svg'
 import YouTube from '../assets/Branding/youtube-music-icon.svg'
 import Img from '../assets/Branding/IMG_2184.jpg'
-import Ticket from '../assets/Branding/Tickets.svg'
+import Ticket from '../assets/Branding/tickets.svg'
 
 export function Home() {
   return (
