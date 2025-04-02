@@ -1,3 +1,44 @@
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 2px #ff0000, -2px -2px #00ff00;
+  }
+  25% {
+    text-shadow: -2px 2px #ff0000, 2px -2px #00ff00;
+  }
+  50% {
+    text-shadow: 2px -2px #ff0000, -2px 2px #00ff00;
+  }
+  75% {
+    text-shadow: -2px -2px #ff0000, 2px 2px #00ff00;
+  }
+  100% {
+    text-shadow: 2px 2px #ff0000, -2px -2px #00ff00;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
 .home-page {
   background-color: black;
   display: flex;
@@ -37,6 +78,181 @@
     img {
       width: 3em;
       height: 3em;
+    }
+  }
+
+  .hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url('../assets/Branding/BlackenedSkiesCover.png') center/cover;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 6rem;
+    color: #fff;
+    overflow: hidden;
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.6)
+      );
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: 0 auto;
+      margin-top: 1rem;
+
+      .hero-title-container,
+      .hero-subtitle,
+      .hero-description,
+      .hero-cta {
+        transition: opacity 0.3s ease-out;
+      }
+    }
+
+    .hero-title-container {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      animation: pulse 2s infinite;
+      background: linear-gradient(45deg, #fff, #ff4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+    }
+
+    .title-accent {
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, #ff4444, transparent);
+    }
+
+    .hero-subtitle {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+      .accent-text {
+        color: #ff4444;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    }
+
+    .hero-description {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      margin-bottom: 3rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+      .glitch-text {
+        margin-bottom: 1rem;
+        animation: glitch 3s infinite;
+        animation-delay: calc(var(--i) * 0.2s);
+      }
+    }
+
+    .hero-cta {
+      margin-top: 2rem;
+
+      .cta-button {
+        padding: 1rem 2.5rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background: transparent;
+        border: 2px solid #ff4444;
+        color: #ff4444;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+          background: #ff4444;
+          color: #fff;
+          transform: translateY(-2px);
+          box-shadow: 0 5px 15px rgba(255, 68, 68, 0.3);
+        }
+
+        &:active {
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+
+      .scroll-line {
+        width: 2px;
+        height: 60px;
+        background: linear-gradient(to bottom, #ff4444, transparent);
+        animation: scroll 2s infinite;
+      }
+    }
+  }
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .home-page {
+    .hero-section {
+      min-height: 100vh;
+      padding: 1rem;
+
+      .hero-title {
+        font-size: 3rem;
+        letter-spacing: 2px;
+      }
+
+      .hero-subtitle {
+        font-size: 1.3rem;
+      }
+
+      .hero-description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      .hero-cta {
+        .cta-button {
+          padding: 0.8rem 2rem;
+          font-size: 1rem;
+        }
+      }
     }
   }
 }

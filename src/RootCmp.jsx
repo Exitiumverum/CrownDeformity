@@ -11,7 +11,6 @@ import { Footer } from './cmps/Footer.jsx'
 export function RootCmp() {
   return (
     <div className='main-container main-layout'>
-      <AppHeader />
       <main>
         <Routes>
           <Route path='/' element={<Home />} />
