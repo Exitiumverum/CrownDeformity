@@ -21,7 +21,7 @@ export function Footer() {
           <img src={Facebook} alt='Facebook' />
         </a>
         <a
-          href='https://www.instagram.com/crowndeformitydc/'
+          href='https://www.youtube.com/channel/UCdJ_4EFtNdoEmgEquIiX7oA'
           target='_blank'
           rel='noopener noreferrer'
         >
