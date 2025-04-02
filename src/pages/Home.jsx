@@ -6,9 +6,11 @@ import YouTube from '../assets/Branding/youtube-music-icon.svg'
 import Img from '../assets/Branding/MakeDeathcoreGreatAgain.png'
 import Ticket from '../assets/Branding/tickets.svg'
 import { AppHeader } from '../cmps/AppHeader'
+import { ReleasesModal } from '../cmps/ReleasesModal'
 
 export function Home() {
   const [scrollPosition, setScrollPosition] = useState(0)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +29,10 @@ export function Home() {
   return (
     <>
       <AppHeader style={headerStyle} />
+      <ReleasesModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
       <div className='home-page'>
         <section className='hero-section'>
           <div className='hero-overlay'></div>
@@ -51,12 +57,7 @@ export function Home() {
             <div className='hero-cta'>
               <button
                 className='cta-button'
-                onClick={() =>
-                  window.open(
-                    'https://open.spotify.com/album/5JxCimTH6lOODiWwNsQUvw',
-                    '_blank'
-                  )
-                }
+                onClick={() => setIsModalOpen(true)}
               >
                 Listen Now
               </button>
@@ -66,48 +67,6 @@ export function Home() {
             <div className='scroll-line'></div>
           </div>
         </section>
-        <h1>Blackened Skies</h1>
-        <h3>Our debut single</h3>
-        <img className='cover-art' src={CoverArt} alt='Blackened skies cover' />
-        <h3>Listen on:</h3>
-        <div className='single-links'>
-          <button
-            onClick={() =>
-              window.open(
-                'https://open.spotify.com/album/5JxCimTH6lOODiWwNsQUvw',
-                '_blank'
-              )
-            }
-            className='spotify btn'
-          >
-            <img src={Spotify} alt='Spotify' />
-            <h4>Spotify</h4>
-          </button>
-          <button
-            onClick={() =>
-              window.open(
-                'https://music.apple.com/us/album/blackened-skies-single/1799451085',
-                '_blank'
-              )
-            }
-            className='apple-music btn'
-          >
-            <img src={AppleMusic} alt='Apple Music' />
-            <h4>Apple Music</h4>
-          </button>
-          <button
-            onClick={() =>
-              window.open(
-                'https://www.youtube.com/watch?v=SDdGMV4wBIs',
-                '_blank'
-              )
-            }
-            className='youtube btn'
-          >
-            <img src={YouTube} alt='YouTube' />
-            <h4>YouTube</h4>
-          </button>
-        </div>
         <hr className='divider' />
 
         <h2>Come see us live!</h2>
